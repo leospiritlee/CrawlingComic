@@ -81,5 +81,5 @@ class Cartoon:
 
             print(self.comic_title + ' visit webPage :' + comic_chapter_url)
 
-            chapter = Chapter(comic_chapter_url,i ,self.save_path)
-
+            chapter = Chapter(comic_chapter_url,i ,self.save_path, self.comic_title)
+            chapter.start()
